@@ -1,0 +1,29 @@
+---
+name: rpm-spec-language-server
+description: |
+  This is a proof of concept implementation of a server implementing the Language Server Protocol for RPM Spec files.
+
+  Supported LSP endpoints
+
+      autocompletion of macro names, spec sections and preamble keywords
+
+      jump to macro definition
+
+      expand macros on hover
+
+      breadcrumbs/document sections
+
+homepage: https://pypi.org/project/rpm-spec-language-server/
+
+licenses:
+  - GPL-2.0-or-later
+languages:
+  - RPM Spec
+categories:
+  - LSP
+
+source:
+  id: pkg:pypi/rpm-spec-language-server@0.0.1
+
+bin:
+  rpm-spec-language-server: pypi:rpm-spec-language-serve
